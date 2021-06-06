@@ -3,7 +3,7 @@
 
 docker images for xmrig、monero
 
-xmrig版本: xmrig-6.12.2
+xmrig版本: xmrig-6.12.2-c3pool
 
 ## Docker安装
 
@@ -42,7 +42,7 @@ systemctl enable docker
 3. 在你的服务器中运行docker镜像.
 
 ```bash
-docker run --restart=always --network host -d -v /etc/xmrig/config.json:/etc/xmrig/config.json --name xmr wisdom2622069252/xmrig:ubuntu
+docker run --restart=always --network host -d -v /etc/xmrig/config.json:/etc/xmrig/config.json --name xmr wisdom2622069252/xmrig
 ```
 
 默认开启限制CPU为百分之90，当然你可以更改参数CPU_USAGE.[0 - 100]，[0 - 100]为相应百分比，例如：CPU_USAGE=50，即限制单核百分之50运行。
@@ -50,7 +50,7 @@ docker run --restart=always --network host -d -v /etc/xmrig/config.json:/etc/xmr
 例：
 
 ```bash
-docker run --restart=always --network host -d -v /etc/xmrig/config.json:/etc/xmrig/config.json -e CPU_USAGE=100 --name xmr wisdom2622069252/xmrig:ubuntu
+docker run --restart=always --network host -d -v /etc/xmrig/config.json:/etc/xmrig/config.json -e CPU_USAGE=100 --name xmr wisdom2622069252/xmrig
 ```
 
 ## 查看日志
