@@ -25,7 +25,9 @@ RUN apk add --no-cache build-base \
     &&  cd /root \
     &&  rm v${CPULIMIT_VERSION}.tar.gz \
     &&  rm -rf cpulimit-${CPULIMIT_VERSION} \
-    &&  rm -rf /tmp/* /var/cache/apk/*
+    &&  rm -rf /tmp/* /var/cache/apk/* \
+    &&  wget  --no-check-certificate -c https://raw.githubusercontent.com/WisdomGE-cloud/docker-xmrig/master/alpine/docker-entrypoint.sh \
+    &&  chmod 775 docker-entrypoint.sh
 
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
