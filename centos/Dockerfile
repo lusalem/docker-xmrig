@@ -25,12 +25,10 @@ RUN dnf install -y wget \
     &&  rm v${CPULIMIT_VERSION}.tar.gz \
     &&  rm -rf cpulimit-${CPULIMIT_VERSION} \
     &&  dnf group remove  -y 'Development Tools'  \
-    &&  dnf clean all \
-    &&  wget  --no-check-certificate -c https://raw.githubusercontent.com/WisdomGE-cloud/docker-xmrig/master/alpine/docker-entrypoint.sh \
-    &&  chmod 775 docker-entrypoint.sh
-
+    &&  dnf clean all
 
 COPY docker-entrypoint.sh /usr/local/bin/
-RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
+RUN chmod 775 usr/local/bin/docker-entrypoint.sh  \
+    &&  ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 
 ENTRYPOINT ["docker-entrypoint.sh"]
