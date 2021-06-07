@@ -1,5 +1,5 @@
 # docker-xmrig（xmrig的docker镜像）
-[![xmr](http://dockeri.co/image/wisdom2622069252/xmrig)](https://hub.docker.com/r/wisdom2622069252/xmrig)
+[![xmr](http://dockeri.co/image/wisdomclouds/xmrig)](https://hub.docker.com/r/wisdomclouds/xmrig)
 
 docker images for xmrig、monero
 
