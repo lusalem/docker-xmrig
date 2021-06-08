@@ -17,6 +17,9 @@ systemctl enable docker
 
 ## 使用教程
 1. 复制[config.json](https://github.com/WisdomGE-cloud/xmrig-docker/blob/main/config.json)到服务器目录/etc/xmrig/config.json下.
+```bash
+        wget -P /etc/xmrig/ https://raw.githubusercontent.com/WisdomGE-cloud/docker-xmrig/master/config.json
+```
 
 2. 编辑/etc/xmrig/config.json.
 ```bash
