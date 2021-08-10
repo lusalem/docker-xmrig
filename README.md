@@ -3,7 +3,7 @@
 
 docker images for xmrig、monero
 
-xmrig版本: xmrig-6.12.2-c3pool
+xmrig版本: xmrig-6.14.0-c3pool
 
 ## Docker安装
 
