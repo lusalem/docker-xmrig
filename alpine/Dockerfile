@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.13
 
 LABEL maintainer="wisdom <wisdom2622069252@gmail.com>"
 
