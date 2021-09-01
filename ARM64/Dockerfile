@@ -1,4 +1,4 @@
-FROM alpine:3.13
+FROM --platform=linux/arm64 alpine:edge
 
 LABEL maintainer="wisdom <wisdom2622069252@gmail.com>"
 
