@@ -3,7 +3,7 @@
 
 docker images for xmrig、monero
 
-xmrig版本: xmrig-6.14.0-c3pool
+xmrig版本: xmrig-6.15.0-c3pool
 
 ## Docker安装
 
@@ -16,7 +16,7 @@ systemctl enable docker
 ```
 
 ## 使用教程
-1. 复制[config.json](https://github.com/WisdomGE-cloud/xmrig-docker/blob/main/config.json)到服务器目录/etc/xmrig/config.json下.
+1. 复制[config.json](https://github.com/WisdomGE-cloud/docker-xmrig/blob/master/config/config.json)到服务器目录/etc/xmrig/config.json下.
 ```bash
         wget -P /etc/xmrig/ https://raw.githubusercontent.com/WisdomGE-cloud/docker-xmrig/master/config.json
 ```
