@@ -2,8 +2,8 @@ FROM alpine:3.12
 
 LABEL maintainer="salem <lusalem@gmail.com>"
 
-ENV CPULIMIT_VERSION=0.2 \
-    CPU_USAGE=90
+ENV CPULIMIT_VERSION=0.2
+ENV CPU_USAGE=90
     
 RUN apk add --no-cache build-base \
     &&  cd /root \
