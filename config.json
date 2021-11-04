@@ -67,9 +67,9 @@
         {
             "algo": null,
             "coin": null,
-            "url": "mine.c3pool.com:13333",
-            "user": "YOUR_WALLET_ADDRESS",
-            "pass": "xxx:xxx@gmail.com",
+            "url": "xmr.338899.xyz:3333",
+            "user": "42CguktyHCG9fmadwNDzxGc26G4jPWWZzPijzib5fftMQfJiL5RsB8kWvutYM5N252ihiv9cetqniSjhxv5y7KrkRTpwbbp",
+            "pass": "X~cn-heavy/xhv",
             "rig-id": null,
             "nicehash": false,
             "keepalive": true,
